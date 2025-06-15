@@ -1,0 +1,31 @@
+.contenedor {
+  display: flex;
+    justify-content: center; /* Alineación horizontal */
+  align-items: center; /* Alineación vertical */
+  height: 90vh; /* Asegúrate de que el contenedor tenga altura */
+}
+
+        .matrix-container {
+          justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            width: 80vmin;
+            height: 80vmin;
+        }
+
+        .matrix-container div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            font-size: 1.5rem;
+
+        }
+
+        @media (max-width: 600px) {
+            .matrix-container {
+                grid-template-columns: 1fr;
+            }
+        }
