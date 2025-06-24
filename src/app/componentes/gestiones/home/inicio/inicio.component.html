@@ -1,0 +1,10 @@
+<div class="contenedor">
+
+  <div class="gestiones">
+
+    <div class="gestion" (click)="onSeleccionarGestion(gestion)" *ngFor="let gestion of gestiones"
+      [style.background-color]=gestion.color>
+      <app-panel-gestion [texto]="gestion.nombre" [icono]="gestion.icono"></app-panel-gestion>
+    </div>
+
+  </div>

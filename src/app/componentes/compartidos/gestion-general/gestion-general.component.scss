@@ -1,0 +1,9 @@
+.linea-degradada {
+    height: 3px;
+    /* Altura de la línea */
+    width: 100%;
+    /* O ajusta a un valor específico como 300px */
+    background: linear-gradient(to right, #ff0000, #fff);
+    /* Degradado de izquierda a derecha */
+    border: none;
+}

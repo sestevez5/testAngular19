@@ -5,7 +5,7 @@
   height: 90vh; /* Asegúrate de que el contenedor tenga altura */
 }
 
-        .matrix-container {
+        .gestiones {
           justify-content: center;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -14,15 +14,28 @@
             height: 80vmin;
         }
 
-        .matrix-container div {
+        .gestion {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: black;
             font-size: 1.5rem;
-
+            // border-style: solid;
+            // border-width: 1px;
+            border-radius: 5%;
         }
+
+        .alumnado {
+          background-color: #ACE7FF;
+        }
+
+        .docentes {
+          background-color: #FFABAB
+        }
+
+        .centros {
+          background-color: #BFFCC6        }
 
         @media (max-width: 600px) {
             .matrix-container {
