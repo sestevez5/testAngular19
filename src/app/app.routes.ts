@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { GestionAlumnadoComponent } from './componentes/gestiones/alumnado/gestionAlumnado/gestionAlumnado.component';
-import { GestionDocentesComponent } from './componentes/gestiones/docentes/gestionDocentes/gestionDocentes.component';
-import { InicioComponent } from './componentes/gestiones/home/inicio/inicio.component';
-import { GestionGeneralComponent } from './componentes/compartidos/gestion-general/gestion-general.component';
+import { GestionAlumnadoComponent } from './features/alumnado/gestionAlumnado/gestionAlumnado.component';
+import { GestionDocentesComponent } from './features/docentes/gestionDocentes/gestionDocentes.component';
+import { InicioComponent } from './features/home/inicio/inicio.component';
+import { GestionGeneralComponent } from './shared/componentes/gestion-general/gestion-general.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },

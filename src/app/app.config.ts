@@ -6,7 +6,8 @@ import Aura from '@primeng/themes/aura'
 import { routes } from './app.routes';
 
 import { provideAnimations } from '@angular/platform-browser/animations'
-import { provideHttpClient } from '@angular/common/http'
+import { provideHttpClient, withInterceptors } from '@angular/common/http'
+import { tokenInterceptor } from './shared/inteceptors/auth.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -17,7 +18,7 @@ export const appConfig: ApplicationConfig = {
         preset: Aura
       }
     }),
-    provideHttpClient(),
+    provideHttpClient(withInterceptors([tokenInterceptor])),
 
     provideAnimations()
   ]
